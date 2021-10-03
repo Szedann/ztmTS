@@ -1,0 +1,147 @@
+html, .wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+#map {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  position: absolute;
+}
+
+#map .mapboxgl-ctrl-geolocate {
+  display: none;
+}
+
+#map .mapboxgl-ctrl.mapboxgl-ctrl-attrib {
+  background-color: transparent;
+}
+
+#map .mapboxgl-ctrl.mapboxgl-ctrl-attrib * {
+  color: var(--txt-color);
+}
+
+.tracked-vehicle-details {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 200;
+  background-color: var(--bg-sec-color);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: white;
+  color: white;
+  padding: 1rem;
+  border-radius: .3rem;
+  margin: .4rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.tracked-vehicle-details h2 {
+  margin: 0;
+}
+
+.tracked-vehicle-details h2 span {
+  opacity: .5;
+  font-weight: 100;
+}
+
+#busInfo {
+  z-index: 200;
+  background-color: var(--bg-sec-color);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: white;
+  position: absolute;
+  padding: 1rem;
+  border-radius: .3rem;
+  margin: .4rem;
+  display: none;
+}
+
+#busInfo > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#busInfo > div ul {
+  margin-top: 0;
+}
+
+.search {
+  position: absolute;
+  z-index: 250;
+  margin: .4rem;
+  border-radius: .3rem;
+  background-color: var(--bg-sec-color);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search div:first-of-type {
+  padding: .3rem;
+  border-radius: .4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search input, .search button {
+  background: transparent;
+  border: 0;
+  padding: .3rem;
+  outline: 0;
+  color: inherit;
+  font-family: inherit;
+}
+
+.search button {
+  padding: .3rem;
+  padding-bottom: 0;
+}
+
+@media (max-width: 766px) {
+  .search {
+    width: calc(100% - .8rem);
+  }
+  .search input {
+    font-size: 1em;
+  }
+  .search input:nth-of-type(1) {
+    width: 100%;
+  }
+  .tracked-vehicle-details {
+    width: calc(100% - .8rem);
+  }
+}
+/*# sourceMappingURL=geo.css.map */

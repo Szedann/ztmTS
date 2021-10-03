@@ -1,0 +1,54 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 70vh;
+  margin: 0;
+}
+
+body div {
+  width: clamp(400px, 400px, 80vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--bg-sec-color);
+  padding: .4rem;
+  border-radius: .3rem;
+}
+
+body div select, body div input {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding: .5rem;
+  color: white;
+}
+
+body div input {
+  padding-left: .7rem;
+}
+
+body div select option {
+  background-color: var(--bg-sec-color);
+}
+
+body div img {
+  width: 100%;
+  border-radius: .3rem;
+  margin: .3rem;
+}
+/*# sourceMappingURL=qr.css.map */

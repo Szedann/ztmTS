@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/geo/geo.css">
+    <title>mapa pojazdów - ZtmGeo</title>
+    <script>
+        let vehicle = <%- JSON.stringify(vehicle) %>;
+    </script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet'>
+    <script src="/scripts/track.js" defer></script>
+    <link rel="shortcut icon" href="images/icon-256x256.png" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <div id='map'></div>
+        <div class="tracked-vehicle-details">
+            <h2><%=vehicle.Lines%> <span><%=vehicle.VehicleNumber%></span> </h2>
+            <div> <%= vehicleDetails.maker %> <%=vehicleDetails.model%> (<%=vehicleDetails.year%>)</div>
+        </div>
+    </div>
+</body>
+</html>

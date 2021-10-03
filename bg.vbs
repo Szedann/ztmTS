@@ -1,0 +1,1 @@
+CreateObject("Wscript.Shell").Run "ts-node src/index", 0

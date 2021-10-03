@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'DINPro-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DINPro-Regular'), url('/fonts/DINPro-Regular_13937.woff') format('woff');
+}
+
+:root{
+    --bg-color: #060E11;
+    --txt-color: #fff;
+    --font-family: 'DINPro-Regular', 'Public Sans', sans-serif;
+    --ahref-color: #1DA1F2;
+    --bg-sec-color: #191a1adc;
+}
+
+body{
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    margin: 0;
+}
+
+a{
+    color: var(--ahref-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button{
+    text-decoration: none;
+    color: var(--txt-color);
+    background-color: var(--bg-sec-color);
+    display: inline-block;
+    padding: 1rem;
+    margin: .4rem;
+    text-align: center;
+    border-radius: .4rem;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/qr/qr.css">
+    <link rel="shortcut icon" href="images/icon-256x256.png" type="image/x-icon">
+    <script src="scripts/qr.js"></script>
+    <title>Generator kodów QR - ZtmGeo</title>
+</head>
+<body>
+    <h1>Generator kodów QR</h1>
+    <div>
+        <select id="traction" name="traction">
+            <option value="bus">autobus</option>
+            <option value="tram">tramwaj</option>
+            <option value="metro">metro</option>
+        </select>
+        <input type="text" id="id" placeholder="Nr. taborowy" autocomplete="off">
+        <input type="button" value="generuj" onclick="generateQR()">
+        <img id="qr" src="" alt="">
+    </div>
+</body>
+</html>

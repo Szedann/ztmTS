@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    margin: 0;
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
