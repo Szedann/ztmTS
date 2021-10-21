@@ -6,7 +6,7 @@ import axios from 'axios';
 dotenv.config({ path: __dirname+'/../.env'})
 const um = new ztm(process.env.API_KEY as string)
 
-const port = 8000;
+const port = 80;
 
 const app = express()
 

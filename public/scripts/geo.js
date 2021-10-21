@@ -99,7 +99,7 @@ async function showBusDetails(line, details, type){
     Wyposażenie:
     <b> <ul id="bus-detail-equipment"></ul></b>
     <a onclick=showImage("/api/qr?id=${details.vehicleID}&type=${type}")>Kod QR do skanowania biletów</a>
-    <a href="/geo/track/${traction}/${details.vehicleID}">zacznij śledzić pojazd</a>
+    <a href="/geo/track/${traction}/${details.vehicleID}">Zacznij śledzić pojazd (beta)</a>
     </div>
     `
     switch(details.carrier){
